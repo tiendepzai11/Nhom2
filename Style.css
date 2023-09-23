@@ -1,0 +1,107 @@
+@font-face {
+  font-family: Script;
+  src: url(DancingScript-Bold.ttf);
+}
+
+body{
+	background-color: #021323;
+
+}
+#header{
+
+	display: flex;
+	justify-content: center;
+
+	background-image: url('https://i.pinimg.com/564x/d4/4e/41/d44e41cb50f142f3377d728d2402d3f4.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 64px 64px #021323 inset;
+	
+}
+
+
+#header #introduce .h{
+	color:#ecb365;
+	font-family: Script;
+	text-align: center;
+}
+#header #introduce h1{
+	font-size: 5.1rem;	
+	align-self: center;
+}
+
+
+#main{
+	min-height: 50vh;
+	display:flex;
+	justify-content: center;
+	flex-direction:column ;
+	align-items: center;
+	align-content: space-around;
+
+
+	margin:0;
+	padding:0;
+
+	box-sizing:border-box;
+	font-family: sans-serif;
+	color: white;
+}
+
+/*-----------------------------------------------------*/
+
+#main table,td,th{
+	padding: 1rem;
+	border-collapse: collapse	;
+}
+
+#main table{
+	background-color: #fff5;
+	border-radius: 10px;
+
+	backdrop-filter: blur(7px);
+	box-shadow: 0 .4rem .8rem  #0005;
+
+	overflow: hidden;
+}
+
+#main img{
+	width:36px;
+	height: 36px;
+
+	border-radius: 50%;
+
+}
+#main thead th{
+	position: sticky;
+	top:0;
+	left:0;
+}
+#main .table_body{
+	width: 95%;
+	max-height: calc(89% - .8rem);
+	margin: .8rem auto;
+	overflow: auto;
+}
+#main .table_body::-webkit-scrollbar{
+	width: 0.5rem;
+	height: 0.5rem;
+}
+#main .table_body::-webkit-scrollbar-thumb{
+
+	visibility: hidden;
+}
+/*---------------------------------------------------*/
+
+@media only screen and (max-width:46.1875.em){
+	#header{
+		background-size:cover;
+	}
+
+}
+
+@media only screen and (min-width:46.25.em) and (max-width: 63.9375em){
+	#header {
+		background-size: cover;
+	}
+}
